@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vless-ws
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: UUID
+        value: bfc14c92-9382-4197-b2d1-7254b1bffd06
